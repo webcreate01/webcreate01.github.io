@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WEBCREATE — Websites that mean business.</title>
+<meta name="description" content="WEBCREATE builds modern, fast, mobile-first websites for businesses and creators.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#07070a;--card:#101116;--text:#f7f7f8;--muted:#a7a8b0;--line:#24252c;--accent:#fff}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1120px,92%);margin:auto}
+nav{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.logo{font-weight:900;letter-spacing:-1px;font-size:22px}
+.logo span{opacity:.45}
+.navlinks{display:flex;gap:28px;color:#c9c9cf;font-size:14px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:12px;background:#fff;color:#09090b;font-weight:800;font-size:14px;border:1px solid #fff;transition:.2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:transparent;color:#fff;border-color:var(--line)}
+.hero{padding:105px 0 90px;text-align:center}
+.pill{display:inline-block;border:1px solid var(--line);background:#0e0f13;border-radius:999px;padding:7px 12px;color:#c8c8cf;font-size:12px;margin-bottom:25px}
+h1{font-size:clamp(48px,8vw,88px);line-height:.98;letter-spacing:-5px;max-width:900px;margin:auto}
+.grad{color:#8f9098}
+.hero p{max-width:650px;margin:25px auto;color:var(--muted);font-size:18px}
+.actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:28px}
+section{padding:85px 0}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;color:#888991;margin-bottom:12px}
+h2{font-size:clamp(32px,5vw,54px);letter-spacing:-2px;line-height:1.05}
+.sub{color:var(--muted);max-width:620px;margin-top:15px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:35px}
+.card{background:linear-gradient(145deg,#111217,#0b0c10);border:1px solid var(--line);border-radius:20px;padding:28px;min-height:205px}
+.num{font-size:13px;color:#777983}
+.card h3{margin:45px 0 8px;font-size:21px}
+.card p{color:var(--muted);font-size:14px}
+.showcase{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:35px}
+.demo{border:1px solid var(--line);border-radius:22px;padding:28px;min-height:330px;background:radial-gradient(circle at 75% 15%,#282a31,transparent 35%),#0d0e12;position:relative;overflow:hidden}
+.demo:after{content:"";position:absolute;width:240px;height:240px;border:1px solid #363840;border-radius:50%;right:-90px;bottom:-110px}
+.demo h3{font-size:32px;max-width:420px;letter-spacing:-1px}
+.demo p{color:var(--muted);margin-top:12px;max-width:420px}
+.demo .mini{position:absolute;bottom:25px;left:28px;font-size:12px;color:#8e8f97}
+.price{display:flex;align-items:end;gap:5px;margin:18px 0}
+.price b{font-size:36px}
+.price span{color:#888;font-size:13px}
+.pricecard{position:relative}
+.pricecard.featured{border-color:#555862}
+.pricecard .btn{width:100%;margin-top:22px}
+.steps{counter-reset:step}
+.step{display:grid;grid-template-columns:60px 1fr;gap:18px;padding:24px 0;border-bottom:1px solid var(--line)}
+.step strong{font-size:18px}.step p{color:var(--muted);font-size:14px;margin-top:4px}
+.circle{width:42px;height:42px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;color:#aaa}
+.cta{border:1px solid var(--line);border-radius:28px;padding:60px 30px;text-align:center;background:linear-gradient(145deg,#121318,#090a0d)}
+.cta h2{max-width:700px;margin:auto}
+.cta p{color:var(--muted);margin:15px auto 25px;max-width:560px}
+footer{padding:30px 0 45px;color:#777983;font-size:13px;display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line)}
+@media(max-width:760px){
+.navlinks{display:none}.hero{padding:75px 0}.hero h1{letter-spacing:-3px}
+.grid,.showcase{grid-template-columns:1fr}section{padding:65px 0}.card{min-height:180px}
+footer{flex-direction:column}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="logo" href="#">WEB<span>CREATE</span></a>
+  <div class="navlinks"><a href="#services">Services</a><a href="#work">Work</a><a href="#pricing">Pricing</a></div>
+  <a class="btn" href="#contact">Get a website</a>
+</nav>
+
+<header class="hero">
+  <div class="pill">WE CREATE. YOU GROW.</div>
+  <h1>Websites that make your business <span class="grad">look serious.</span></h1>
+  <p>Modern, mobile-first websites built for businesses, creators and local brands — without the boring corporate look.</p>
+  <div class="actions">
+    <a class="btn" href="#contact">Start your website →</a>
+    <a class="btn ghost" href="#work">See what we build</a>
+  </div>
+</header>
+
+<section id="services">
+  <div class="eyebrow">What we do</div>
+  <h2>Everything you need to get online.</h2>
+  <p class="sub">Clean design, fast performance and a layout built around what your customers actually need to see.</p>
+  <div class="grid">
+    <article class="card"><span class="num">01</span><h3>Business websites</h3><p>Professional websites for shops, services, restaurants, gyms and growing businesses.</p></article>
+    <article class="card"><span class="num">02</span><h3>Landing pages</h3><p>Focused pages designed to turn visitors into enquiries, bookings or customers.</p></article>
+    <article class="card"><span class="num">03</span><h3>Portfolio sites</h3><p>Showcase your work, projects, skills or personal brand with a polished online presence.</p></article>
+  </div>
+</section>
+
+<section id="work">
+  <div class="eyebrow">Demo work</div>
+  <h2>Built to feel premium.</h2>
+  <p class="sub">These are demo concepts you can customize for real clients. Replace them with your completed client projects as you grow.</p>
+  <div class="showcase">
+    <div class="demo"><h3>Local business<br>website concept.</h3><p>Clear services, strong calls-to-action and a mobile-first layout.</p><span class="mini">WEBSITE / BUSINESS</span></div>
+    <div class="demo"><h3>Creator portfolio<br>concept.</h3><p>A simple place to show work, social links and contact details.</p><span class="mini">WEBSITE / CREATOR</span></div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="eyebrow">Simple pricing</div>
+  <h2>Start small. Upgrade when you grow.</h2>
+  <p class="sub">Introductory packages. Final pricing can change depending on pages, features and content.</p>
+  <div class="grid">
+    <article class="card pricecard"><span class="num">STARTER</span><div class="price"><b>₹999</b><span>/site</span></div><p>One-page website, mobile-friendly design and contact CTA.</p><a class="btn ghost" href="#contact">Choose starter</a></article>
+    <article class="card pricecard featured"><span class="num">BUSINESS</span><div class="price"><b>₹1,999</b><span>/site</span></div><p>Multi-section business site with services, gallery and contact area.</p><a class="btn" href="#contact">Choose business</a></article>
+    <article class="card pricecard"><span class="num">CUSTOM</span><div class="price"><b>Let's talk</b></div><p>Custom pages, features and designs for a larger project.</p><a class="btn ghost" href="#contact">Request quote</a></article>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">How it works</div>
+  <h2>Simple from start to launch.</h2>
+  <div class="steps" style="margin-top:25px">
+    <div class="step"><div class="circle">01</div><div><strong>Tell us what you need</strong><p>Send your business details, photos, services and preferred style.</p></div></div>
+    <div class="step"><div class="circle">02</div><div><strong>We build the design</strong><p>You get a clean first version to review and request changes.</p></div></div>
+    <div class="step"><div class="circle">03</div><div><strong>Review & launch</strong><p>After approval, the finished website is ready to publish.</p></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="cta">
+    <div class="eyebrow">Let's build</div>
+    <h2>Ready to give your business a proper website?</h2>
+    <p>Message WEBCREATE with your business name and what you want your website to do.</p>
+    <!-- Replace the number below with your own WhatsApp number -->
+    <a class="btn" href="https://wa.me/919999999999?text=Hi%20WEBCREATE%2C%20I%20want%20a%20website%20for%20my%20business.">Chat on WhatsApp →</a>
+  </div>
+</section>
+
+<footer><span>© 2026 WEBCREATE</span><span>Websites • Design • Digital presence</span></footer>
+</div>
+</body>
+</html>
